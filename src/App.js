@@ -1,8 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HomePage } from './pages';
 
 const App = () => {
     return ( 
-        <h1>The Ruel Misa</h1>
+        <Router>
+            <Switch>
+                <Route exact path='/' component={HomePage} />
+            </Switch>
+        </Router>
     );
 }
 
