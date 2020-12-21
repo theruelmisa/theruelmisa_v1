@@ -1,13 +1,18 @@
 import React from 'react';
 
-import {
-    Navbar
+import { 
+    Header,
+    Footer 
 } from '../../components';
 
 const HomePage = () => {
     return (
         <React.Fragment>
-            <Navbar />
+            <Header />
+            <div>
+                <h1>THIS IS THE BODY CONTENT</h1>
+            </div>
+            <Footer />
         </React.Fragment>
     );
 }

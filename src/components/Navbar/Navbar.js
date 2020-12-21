@@ -3,8 +3,6 @@ import React from 'react';
 const Navbar = () => {
     return (
         <React.Fragment>
-            <h1>The Ruel Misa Logo</h1>
-
             <nav>
                 <ul>
                     <li>Home</li>
