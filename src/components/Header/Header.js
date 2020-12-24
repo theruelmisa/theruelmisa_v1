@@ -1,12 +1,16 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import { HeaderBox, HeaderItemsWrapper } from './Header.elements';
+import { Navbar, Logo } from '../../components';
 
-const Header = () => {
+
+const Header = ({ logo, logoAlt }) => {
     return (
-        <header>
-            <h1>The Ruel Misa Logo</h1>
-            <Navbar />
-        </header>
+        <HeaderBox>
+            <HeaderItemsWrapper>
+                <Logo logo={logo} logoAlt={logoAlt} />
+                <Navbar />
+            </HeaderItemsWrapper>
+        </HeaderBox>
     )
 };
 

@@ -1,17 +1,26 @@
 import React from 'react';
+import { 
+    NavBox,
+    NavItemsContainer,
+    NavItem,
+    NavLink 
+} from './Navbar.elements';
 
 const Navbar = () => {
     return (
-        <React.Fragment>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                </ul>
-                <button>Let's Talk</button>
-            </nav>
-        </React.Fragment>
+        <NavBox>
+            <NavItemsContainer>
+                <NavItem>
+                    <NavLink to="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to="/about">About</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to="/projects">Projects</NavLink>
+                </NavItem>
+            </NavItemsContainer>
+        </NavBox>
         
     )
 };

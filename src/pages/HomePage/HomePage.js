@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { imageData } from './Data';
 import { 
     Header,
     Footer 
@@ -8,7 +8,7 @@ import {
 const HomePage = () => {
     return (
         <React.Fragment>
-            <Header />
+            <Header logo={imageData.logo} logoAlt={imageData.logoAlt} />
             <div>
                 <h1>THIS IS THE BODY CONTENT</h1>
             </div>
