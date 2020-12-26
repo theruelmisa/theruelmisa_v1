@@ -10,7 +10,7 @@ const HomePage = () => {
         <React.Fragment>
             <Header logo={imageData.logo} logoAlt={imageData.logoAlt} />
             <div>
-                <h1>THIS IS THE BODY CONTENT</h1>
+                <h1>Ruel Misa.</h1>
             </div>
             <Footer />
         </React.Fragment>

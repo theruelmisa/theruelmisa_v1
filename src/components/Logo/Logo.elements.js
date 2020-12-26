@@ -17,5 +17,7 @@ export const LogoIcon = styled.img`
 `;
 
 export const LogoText = styled.h1`
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-weight: 700;
 `;

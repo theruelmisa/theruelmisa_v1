@@ -1,10 +1,11 @@
 import React from 'react';
+import { FooterBox } from './Footer.elements';
 
 const Footer = () => {
     return (
-        <footer>
+        <FooterBox>
             <h1>The Ruel Misa Footer</h1>
-        </footer>
+        </FooterBox>
     )
 };
 

@@ -1,13 +1,17 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-// CSS "VARIABLES"
-
-export const styleVariables = {
-    // COLOR
-    primaryRed: "",
-};
-
 const GlobalStyles = createGlobalStyle`
+
+    :root {
+        --red: #E63946;
+        --blue: #487EB0;
+        --teal: #A8DADC;
+        --black: #2F3640;
+        --grey: #7F8FA6;
+        --white: #FFFAFA;
+
+        --bs-light: 1px 3px 10px rgba(0, 0, 0, .25);
+    }
 
     *, 
     *::before,
@@ -25,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 1.4;
+        background: var(--black);
+        color: var(--teal);
     }
 
     a { 
@@ -40,7 +46,6 @@ const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
     z-index: 1;
     width: 100%;
-    max-width: 150rem;
     margin: 0 auto;
     padding: 0 5rem; 
 
