@@ -1,18 +1,17 @@
 import React from 'react';
 import { imageData } from './Data';
 import { 
-    Header,
-    Footer 
+    Navbar
 } from '../../components';
 
 const HomePage = () => {
     return (
         <React.Fragment>
-            <Header logo={imageData.logo} logoAlt={imageData.logoAlt} />
+            <Navbar />
             <div>
                 <h1>Ruel Misa.</h1>
             </div>
-            <Footer />
+
         </React.Fragment>
     );
 }

@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 
 export const NavBox = styled.nav`
     font-size: 1.4rem;
-    align-self: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 `;
 
 export const NavItemsContainer = styled.ul`
