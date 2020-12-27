@@ -57,6 +57,14 @@ export const NavLink = styled(Link)`
     } */
 `;
 
+export const SocialItemsContainer = styled.ul`
+
+`;
+
+export const SocialItem = styled.li`
+
+`;
+
 export const SocialLink = styled.a`
     font-size: 2rem;
     padding: 0.5rem 1.5rem;
