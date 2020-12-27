@@ -4,14 +4,17 @@ import {
     NavBox,
     NavItemsContainer,
     NavItem,
-    NavLink 
+    NavLink,
+    SocialLink 
 } from './Navbar.elements';
 import { 
     IoHomeOutline,
     IoPersonOutline,
     IoAlbumsOutline,
     IoMailOutline,
-    IoDocumentTextOutline
+    IoDocumentTextOutline,
+    IoLogoLinkedin,
+    IoLogoGithub
 } from "react-icons/io5";
 
 const Navbar = ({ logo, altLogo }) => {
@@ -44,9 +47,16 @@ const Navbar = ({ logo, altLogo }) => {
                         <IoDocumentTextOutline />
                     </NavLink>
                 </NavItem>
+                
 
             </NavItemsContainer>
-            <p>Social Nav</p>
+            <NavItemsContainer>
+                <NavItem title="Resume">
+                    <SocialLink target="_blank" href="">
+                        <IoLogoLinkedin />
+                    </SocialLink>
+                </NavItem>
+            </NavItemsContainer>
         </NavBox>
         
     )

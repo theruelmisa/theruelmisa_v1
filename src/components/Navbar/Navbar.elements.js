@@ -11,7 +11,8 @@ export const NavBox = styled.nav`
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: var(--bs-light);
+    /* box-shadow: var(--bs-light); */
+    border-right: 1px solid #3c3c3c;
 `;
 
 export const NavItemsContainer = styled.ul`
@@ -54,5 +55,11 @@ export const NavLink = styled(Link)`
             transition: all 0.5s ease;
         }
     } */
+`;
+
+export const SocialLink = styled.a`
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    height: 100%;
 `;
 
