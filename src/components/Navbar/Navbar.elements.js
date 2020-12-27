@@ -57,6 +57,10 @@ export const NavLink = styled(Link)`
     } */
 `;
 
+export const SocialBox = styled.div`
+
+`;
+
 export const SocialItemsContainer = styled.ul`
 
 `;
