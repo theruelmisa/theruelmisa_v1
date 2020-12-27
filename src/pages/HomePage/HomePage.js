@@ -5,12 +5,13 @@ import {
 } from '../../components';
 
 const HomePage = () => {
+
+    const { logo, altLogo } = imageData;
+
     return (
         <React.Fragment>
-            <Navbar />
-            <div>
-                <h1>Ruel Misa.</h1>
-            </div>
+            <Navbar logo={logo} altLogo={altLogo} />
+            
 
         </React.Fragment>
     );

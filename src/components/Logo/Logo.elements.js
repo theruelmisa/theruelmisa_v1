@@ -6,18 +6,13 @@ export const LogoBox = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 `;
 
 
 export const LogoIcon = styled.img`
     cursor: pointer;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
-`;
-
-export const LogoText = styled.h1`
-    font-size: 2.5rem;
-    letter-spacing: .5rem;
-    font-weight: 700;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
 `;

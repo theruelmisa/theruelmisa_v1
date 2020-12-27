@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 400;
         line-height: 1.4;
         background: var(--black);
-        color: var(--primary-color);
+        color: var(--white);
     }
 
     a { 
@@ -54,7 +54,6 @@ export const Container = styled.div`
         padding: 0 3rem; 
     };
 `;
-
 
 
 export default GlobalStyles;
