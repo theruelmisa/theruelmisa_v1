@@ -5,13 +5,13 @@ import {
     NavItemsContainer,
     NavItem,
     NavLink,
+    NavText,
     SocialLink 
 } from './Navbar.elements';
 import { 
     IoHomeOutline,
     IoPersonOutline,
     IoAlbumsOutline,
-    IoMailOutline,
     IoDocumentTextOutline,
     IoLogoLinkedin,
     IoLogoGithub
@@ -20,31 +20,24 @@ import {
 const Navbar = ({ logo, altLogo }) => {
     return (
         <NavBox>
-            <Logo logo={logo} altLogo={altLogo} />
             <NavItemsContainer>
-                <NavItem title="Home">
-                    <NavLink to="/">
-                        <IoHomeOutline />
-                    </NavLink>
-                </NavItem>
                 <NavItem title="About">
                     <NavLink to="/about">
                         <IoPersonOutline />
+                        <NavText>About</NavText>
                     </NavLink>
                 </NavItem>
                 <NavItem title="Work">
                     <NavLink to="/work">
                         <IoAlbumsOutline />
+                        <NavText>Work</NavText>
                     </NavLink>
                 </NavItem>
-                <NavItem title="Contact">
-                    <NavLink to="/contact">
-                        <IoMailOutline />
-                    </NavLink>
-                </NavItem>
+                
                 <NavItem title="Resume">
                     <NavLink to="/resume">
                         <IoDocumentTextOutline />
+                        <NavText>Resume</NavText>
                     </NavLink>
                 </NavItem>
                 
@@ -57,6 +50,8 @@ const Navbar = ({ logo, altLogo }) => {
                     </SocialLink>
                 </NavItem>
             </NavItemsContainer>
+
+            <p>Let's Talk</p>
         </NavBox>
         
     )

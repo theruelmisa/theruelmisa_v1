@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
         --light-grey: #e5e5e5;
         --dark-grey: #b3b3b3;
         --black: #2b2b2b;
+        --black-darker: #232323;
 
 
         --bs-light: 1px 3px 10px rgba(0, 0, 0, .25);
@@ -53,6 +54,15 @@ export const Container = styled.div`
     @media screen and (max-width: 991px) {
         padding: 0 3rem; 
     };
+`;
+
+export const PageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10rem;
 `;
 
 

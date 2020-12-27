@@ -5,21 +5,17 @@ import { Link } from 'react-router-dom';
 export const NavBox = styled.nav`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     /* box-shadow: var(--bs-light); */
-    border-right: 1px solid #3c3c3c;
 `;
 
 export const NavItemsContainer = styled.ul`
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 `;
 
 export const NavItem = styled.li`
@@ -28,9 +24,9 @@ export const NavItem = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover {
-        color: var(--secondary-color);
-    }
+
+
+
 
     /* @media screen and (max-width: 960px) {
         width: 100%;
@@ -42,9 +38,58 @@ export const NavItem = styled.li`
 
 export const NavLink = styled(Link)`
     font-size: 2rem;
-    padding: 0.5rem 1.5rem;
-    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    color: var(--primary-color);
+    position: relative;
 
+    & p {
+        transition: color .5s ease-out;
+    }
+
+    &:hover p {
+        color: var(--secondary-color);
+    }
+
+    &::before, 
+    &::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover::before, 
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+        transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+    }
+
+    &:hover::before {
+        border-top-color: var(--secondary-color);
+        border-right-color: var(--secondary-color);
+    }
+
+    &:hover::after {
+        border-bottom-color: var(--secondary-color);
+        border-left-color: var(--secondary-color);
+    }
     /* @media screen and (max-width: 960px) {
         text-align: center;
         padding: 2rem;
@@ -55,6 +100,12 @@ export const NavLink = styled(Link)`
             transition: all 0.5s ease;
         }
     } */
+`;
+
+export const NavText = styled.p`
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-left: .5rem;
 `;
 
 export const SocialBox = styled.div`

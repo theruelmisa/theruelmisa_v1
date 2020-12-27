@@ -1,6 +1,8 @@
 import React from 'react';
 import { imageData } from './Data';
+import { PageContainer } from '../../globalStyles';
 import { 
+    Logo,
     Navbar
 } from '../../components';
 
@@ -9,11 +11,10 @@ const HomePage = () => {
     const { logo, altLogo } = imageData;
 
     return (
-        <React.Fragment>
-            <Navbar logo={logo} altLogo={altLogo} />
-            
-
-        </React.Fragment>
+        <PageContainer>
+            <Logo logo={logo} altLogo={altLogo} />
+            <Navbar />
+        </PageContainer>
     );
 }
 

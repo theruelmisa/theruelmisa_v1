@@ -6,13 +6,17 @@ export const LogoBox = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: var(--bs-light);
+    background: var(--black-darker);
 `;
 
 
 export const LogoIcon = styled.img`
     cursor: pointer;
-    width: 6rem;
-    height: 6rem;
-    margin: 1rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    
 `;
