@@ -50,22 +50,22 @@ const Navbar = ({ logo, altLogo }) => {
             </NavItemsContainer>
             <SocialItemsContainer>
                 <SocialItem>
-                    <SocialLink target="_blank" href="">
+                    <SocialLink target="_blank" href="https://github.com/theruelmisa" rel="noopener noreferrer">
                         <IoLogoGithub />
                     </SocialLink>
                 </SocialItem>
                 <SocialItem>
-                    <SocialLink target="_blank" href="">
+                    <SocialLink target="_blank" href="https://www.linkedin.com/in/theruelmisa/" rel="noopener noreferrer">
                         <IoLogoLinkedin />
                     </SocialLink>
                 </SocialItem>
                 <SocialItem>
-                    <SocialLink target="_blank" href="">
+                    <SocialLink target="_blank" href="https://www.instagram.com/rumies.media/" rel="noopener noreferrer">
                         <IoLogoInstagram />
                     </SocialLink>
                 </SocialItem>
                 <SocialItem>
-                    <SocialLink target="_blank" href="">
+                    <SocialLink target="_blank" href="https://www.behance.net/theruelmisa" rel="noopener noreferrer">
                         <IoLogoBehance />
                     </SocialLink>
                 </SocialItem>
