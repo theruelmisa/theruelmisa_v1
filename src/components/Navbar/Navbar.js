@@ -6,7 +6,10 @@ import {
     NavItem,
     NavLink,
     NavText,
-    SocialLink 
+    SocialLink, 
+    SocialItemsContainer,
+    SocialItem,
+    ResumeLink
 } from './Navbar.elements';
 import { 
     IoHomeOutline,
@@ -14,7 +17,9 @@ import {
     IoAlbumsOutline,
     IoDocumentTextOutline,
     IoLogoLinkedin,
-    IoLogoGithub
+    IoLogoGithub,
+    IoLogoInstagram,
+    IoLogoBehance
 } from "react-icons/io5";
 
 const Navbar = ({ logo, altLogo }) => {
@@ -35,21 +40,36 @@ const Navbar = ({ logo, altLogo }) => {
                 </NavItem>
                 
                 <NavItem title="Resume">
-                    <NavLink to="/resume">
+                    <ResumeLink href="https://docs.google.com/document/d/1GDd_g6b8E3oKefYWUeWu5siAUQWJ_8DKj5ng_F2D4z8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <IoDocumentTextOutline />
                         <NavText>Resume</NavText>
-                    </NavLink>
+                    </ResumeLink>
                 </NavItem>
                 
 
             </NavItemsContainer>
-            <NavItemsContainer>
-                <NavItem title="Resume">
+            <SocialItemsContainer>
+                <SocialItem>
+                    <SocialLink target="_blank" href="">
+                        <IoLogoGithub />
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
                     <SocialLink target="_blank" href="">
                         <IoLogoLinkedin />
                     </SocialLink>
-                </NavItem>
-            </NavItemsContainer>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink target="_blank" href="">
+                        <IoLogoInstagram />
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink target="_blank" href="">
+                        <IoLogoBehance />
+                    </SocialLink>
+                </SocialItem>
+            </SocialItemsContainer>
 
             <p>Let's Talk</p>
         </NavBox>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Container } from '../../globalStyles';
 
 
 export const NavBox = styled.nav`
@@ -9,6 +10,7 @@ export const NavBox = styled.nav`
     align-items: center;
     height: 100%;
     /* box-shadow: var(--bs-light); */
+
 `;
 
 export const NavItemsContainer = styled.ul`
@@ -16,16 +18,18 @@ export const NavItemsContainer = styled.ul`
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    border: 2px solid transparent;
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
 `;
 
 export const NavItem = styled.li`
+    cursor: pointer;
     height: 8rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 
 
     /* @media screen and (max-width: 960px) {
@@ -36,7 +40,74 @@ export const NavItem = styled.li`
     } */
 `;
 
+
 export const NavLink = styled(Link)`
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    color: var(--primary-color);
+    position: relative;
+
+    & p {
+        transition: color .5s ease-out;
+    }
+
+    &:hover p {
+        color: var(--secondary-color);
+    }
+
+    &::before, 
+    &::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover::before, 
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+        transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+    }
+
+    &:hover::before {
+        border-top-color: var(--secondary-color);
+        border-right-color: var(--secondary-color);
+    }
+
+    &:hover::after {
+        border-bottom-color: var(--secondary-color);
+        border-left-color: var(--secondary-color);
+    }
+    /* @media screen and (max-width: 960px) {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        &:hover {
+            color: #4b59f7;
+            transition: all 0.5s ease;
+        }
+    } */
+`;
+
+export const ResumeLink = styled.a`
     font-size: 2rem;
     padding: 2rem;
     display: flex;
@@ -108,21 +179,27 @@ export const NavText = styled.p`
     margin-left: .5rem;
 `;
 
-export const SocialBox = styled.div`
-
-`;
-
 export const SocialItemsContainer = styled.ul`
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-bottom: 3rem;
 `;
 
 export const SocialItem = styled.li`
+    width: 100%;
+    padding: 1rem 1.5rem;
 
+    transition: color .3s ease-in;
+
+    &:hover { 
+        color: var(--primary-color);
+    }
 `;
 
 export const SocialLink = styled.a`
-    font-size: 2rem;
-    padding: 0.5rem 1.5rem;
-    height: 100%;
+    font-size: 2.4rem;
 `;
 

@@ -51,6 +51,7 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: 0 5rem; 
 
+
     @media screen and (max-width: 991px) {
         padding: 0 3rem; 
     };
@@ -63,6 +64,10 @@ export const PageContainer = styled.div`
     justify-content: center;
     height: 100%;
     padding: 10rem;
+`;
+
+export const ContactButton = styled.a`
+
 `;
 
 
