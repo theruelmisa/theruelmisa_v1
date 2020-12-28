@@ -13,7 +13,8 @@ const GlobalStyles = createGlobalStyle`
 
 
         --bs-light: 1px 3px 10px rgba(0, 0, 0, .25);
-        --bs-medium: 1px 3px 8px rgba(0, 0, 0, .5);
+        --bs-medium: 1px 3px 8px rgba(0, 0, 0, .6);
+        --bs-raised: 1.5px 5px 20px rgba(0, 0, 0, .4);
     }
 
     *, 
@@ -84,6 +85,7 @@ export const Button = styled.button`
     }
 
     &:hover {
+        box-shadow: var(--bs-raised);
         transform: translateY(-1rem);
     }
 
