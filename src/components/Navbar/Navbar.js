@@ -1,5 +1,6 @@
 import React from 'react';
 import { Logo } from '../../components';
+import { CtaButton } from '../../globalStyles';
 import { 
     NavBox,
     NavItemsContainer,
@@ -12,7 +13,6 @@ import {
     ResumeLink
 } from './Navbar.elements';
 import { 
-    IoHomeOutline,
     IoPersonOutline,
     IoAlbumsOutline,
     IoDocumentTextOutline,
@@ -71,7 +71,7 @@ const Navbar = ({ logo, altLogo }) => {
                 </SocialItem>
             </SocialItemsContainer>
 
-            <p>Let's Talk</p>
+            <CtaButton>Let's Talk</CtaButton>
         </NavBox>
         
     )

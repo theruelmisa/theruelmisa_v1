@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
 
         --bs-light: 1px 3px 10px rgba(0, 0, 0, .25);
+        --bs-medium: 1px 3px 8px rgba(0, 0, 0, .5);
     }
 
     *, 
@@ -66,8 +67,43 @@ export const PageContainer = styled.div`
     padding: 10rem;
 `;
 
-export const ContactButton = styled.a`
+export const Button = styled.button`
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--primary-color);
+    border-radius: .8rem;
+    background: var(--primary-color);
+    color: var(--white);
+    transition: all .25s ease-in;
 
+    box-shadow: var(--bs-light);
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+    }
+
+    &:active {
+        transform: translateY(-.5rem);
+        box-shadow: var(--bs-medium);
+    }
+`;
+
+export const CtaButton = styled(Button)`
+    background-color: transparent;
+
+
+    &:hover {
+        border-color: var(--secondary-color);
+        background-color: var(--secondary-color);
+        color: var(--black);
+    }
+
+    
 `;
 
 
