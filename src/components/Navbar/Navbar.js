@@ -14,7 +14,8 @@ import {
 } from './Navbar.elements';
 import { 
     IoPersonOutline,
-    IoAlbumsOutline,
+    IoFolderOutline,
+    IoBulbOutline,
     IoDocumentTextOutline,
     IoLogoLinkedin,
     IoLogoGithub,
@@ -34,11 +35,16 @@ const Navbar = ({ logo, altLogo }) => {
                 </NavItem>
                 <NavItem title="Work">
                     <NavLink to="/work">
-                        <IoAlbumsOutline />
+                        <IoFolderOutline />
                         <NavText>Work</NavText>
                     </NavLink>
                 </NavItem>
-                
+                <NavItem title="Work">
+                    <NavLink to="/concepts">
+                        <IoBulbOutline />
+                        <NavText>Concepts</NavText>
+                    </NavLink>
+                </NavItem>
                 <NavItem title="Resume">
                     <ResumeLink href="https://docs.google.com/document/d/1GDd_g6b8E3oKefYWUeWu5siAUQWJ_8DKj5ng_F2D4z8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <IoDocumentTextOutline />
