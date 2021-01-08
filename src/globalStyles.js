@@ -66,12 +66,14 @@ export const PageContainer = styled.div`
     justify-content: center;
     height: 100%;
     padding: 10rem;
+    position: relative;
 `;
 
 export const Button = styled.button`
     cursor: pointer;
     padding: 1rem 2rem;
     font-size: 1.6rem;
+    letter-spacing: .1rem;
     border: 2px solid var(--primary-color);
     border-radius: .8rem;
     background: var(--primary-color);
@@ -106,6 +108,11 @@ export const CtaButton = styled(Button)`
     }
 
     
+`;
+
+export const TextEmphasis = styled.span`
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
 `;
 
 

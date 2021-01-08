@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
 
 
 export const NavBox = styled.nav`
@@ -10,14 +9,13 @@ export const NavBox = styled.nav`
     align-items: center;
     height: 100%;
     /* box-shadow: var(--bs-light); */
-
 `;
 
 export const NavItemsContainer = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     border: 2px solid transparent;
     border-top-color: var(--primary-color);
     border-bottom-color: var(--primary-color);
@@ -177,29 +175,5 @@ export const NavText = styled.p`
     font-size: 1.6rem;
     color: var(--white);
     margin-left: .5rem;
-`;
-
-export const SocialItemsContainer = styled.ul`
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 3rem;
-`;
-
-export const SocialItem = styled.li`
-    width: 100%;
-    padding: 1rem 1.5rem;
-
-    transition: color .3s ease-in;
-
-    &:hover { 
-        color: var(--primary-color);
-    }
-`;
-
-export const SocialLink = styled.a`
-    font-size: 2.4rem;
 `;
 

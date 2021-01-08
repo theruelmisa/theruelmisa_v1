@@ -3,7 +3,8 @@ import { imageData } from './Data';
 import { PageContainer } from '../../globalStyles';
 import { 
     Logo,
-    Navbar
+    Navbar,
+    Footer
 } from '../../components';
 
 const HomePage = () => {
@@ -24,6 +25,7 @@ const HomePage = () => {
                 
             </div>
             <Navbar />
+            <Footer />
         </PageContainer>
     );
 }
