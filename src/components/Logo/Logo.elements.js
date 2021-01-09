@@ -6,7 +6,7 @@ export const LogoBox = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
     box-shadow: var(--bs-light);
     background: var(--black-darker);
 `;

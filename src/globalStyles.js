@@ -113,6 +113,21 @@ export const CtaButton = styled(Button)`
 export const TextEmphasis = styled.span`
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
+    animation: blinking 5s infinite;
+    
+    @keyframes blinking {
+        0% {
+            color: transparent;
+        }
+
+        50% {
+            color: var(--primary-color);
+        }
+
+        100% {
+            color: transparent;
+        }
+    }
 `;
 
 

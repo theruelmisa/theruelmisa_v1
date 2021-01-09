@@ -20,6 +20,7 @@ export const CopyrightBox = styled.div`
 export const CopyrightText = styled.p`
     color: var(--light-gray);
     font-size: 1.2rem;
+    width: 25rem;
     letter-spacing: .1rem;
 `;
 
@@ -38,6 +39,22 @@ export const SocialMediaText = styled.p`
     letter-spacing: .2rem;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
+
+    animation: blinking 3s infinite;
+    
+    @keyframes blinking {
+        0% {
+            color: transparent;
+        }
+
+        50% {
+            color: var(--secondary-color);
+        }
+
+        100% {
+            color: transparent;
+        }
+    }
 `;
 
 
