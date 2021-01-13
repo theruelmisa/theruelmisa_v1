@@ -1,16 +1,22 @@
 import React from 'react';
-import { IntroBox } from './Intro.elements';
+import { MainHeading, SubHeading } from '../../globalStyles';
+import { IntroBox, IntroTextEmphasis, IntroPara } from './Intro.elements';
 
 const Intro = () => {
     return (
         <IntroBox>
-            <h3>Hi there. My name is</h3>
-            <h1>
-                <span style={{ color: "orange"}}>R</span>uel <span style={{ color: "orange"}}>M</span>isa. <br />
-                I build things.
-            </h1>
+            <MainHeading>
+                Creating stories through Design
+            </MainHeading>
+            <SubHeading> 
+                Hello! My name is <IntroTextEmphasis>R</IntroTextEmphasis>uel <IntroTextEmphasis>M</IntroTextEmphasis>isa.
 
-            <p>I am a Front End Developer and Graphic Designer based in Brookyln, NY. I specialize in building creative User Interfaces.</p>
+            </SubHeading>
+            <IntroPara>
+            Front End Developer / <br />
+            Graphic Designer <br />
+            based in Brookyln, NY. 
+            </IntroPara>
         </IntroBox>
     )
 };

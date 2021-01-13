@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
         --dark-grey: #b3b3b3;
         --black: #2b2b2b;
         --black-darker: #232323;
+        --midnight-blue: #031a2a;
+        --midnight: #052439;
 
 
         --bs-light: 1px 3px 10px rgba(0, 0, 0, .25);
@@ -33,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 1.4;
-        background: var(--black);
+        background: var(--midnight-blue);
         color: var(--white);
     }
 
@@ -113,21 +115,26 @@ export const CtaButton = styled(Button)`
 export const TextEmphasis = styled.span`
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
-    animation: blinking 5s infinite;
-    
-    @keyframes blinking {
-        0% {
-            color: transparent;
-        }
+    font-weight: 700;
+`;
 
-        50% {
-            color: var(--primary-color);
-        }
+export const MainHeading = styled.h1`
+    color: var(--primary-color);
+    letter-spacing: .2rem;
+    font-weight: 300;
+    font-size: 4.5rem;
+    text-transform: uppercase;
 
-        100% {
-            color: transparent;
-        }
-    }
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+`;
+
+export const SubHeading = styled.h3`
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
 `;
 
 

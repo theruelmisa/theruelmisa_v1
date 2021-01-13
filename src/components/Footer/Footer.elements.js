@@ -40,20 +40,27 @@ export const SocialMediaText = styled.p`
     padding: .5rem 1rem;
     margin-bottom: 1rem;
 
-    animation: blinking 3s infinite;
-    
-    @keyframes blinking {
+    animation: slidein 3s infinite;
+
+    @keyframes slidein {
         0% {
-            color: transparent;
+            margin-left: 100%;
+            width: 300%;
+            opacity: 0;
         }
 
         50% {
-            color: var(--secondary-color);
+            margin-left: 0%;
+            width: 50%;
+            opacity: 1;
         }
 
         100% {
-            color: transparent;
+            margin-left: 200%;
+            width: 50%;
+            opacity: 0;
         }
+
     }
 `;
 

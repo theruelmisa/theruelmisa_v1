@@ -6,9 +6,9 @@ export const LogoBox = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     box-shadow: var(--bs-light);
-    background: var(--black-darker);
+    background: var(--midnight-blue);
 `;
 
 
