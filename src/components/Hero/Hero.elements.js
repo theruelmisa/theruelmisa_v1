@@ -3,25 +3,20 @@ import { MainHeading, SubHeading } from '../../globalStyles';
 
 export const HeroContainer = styled.div`
     grid-column: full-start / full-end;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
     align-items: center;
+    justify-items: start;
 
     /* background-color: var(--red-main);
     color: var(--grey-light); */
-
-    @media screen and (max-width: 960px) {
-        flex-direction: column;
-        justify-content: center;
-    }
 `;
 
 export const IntroBox = styled.div`
-    margin-top: -15%;
-    margin-left: 15%;
+    grid-column: center-start / center-end;
 
     @media screen and (max-width: 960px) {
-        margin-left: 10%;
-        margin-right: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,16 +48,16 @@ export const IntroButton = styled.button`
     font-size: 1.6rem;
     padding: 1rem 2.5rem;
     margin-bottom: 3rem;
-    border: 1.5px solid black;
+    border: 1.5px solid rgb(var(--black));
     border-radius: 0.7rem;
     background-color: inherit;
 
     transition: all .3s ease;
 
     &:hover {
-        background-color: var(--red-main);
-        color: var(--grey-light);
-        border-color: var(--red-main);
+        background-color: rgb(var(--red-main));
+        color: rgb(var(--grey-light));
+        border-color: rgb(var(--red-main));
         box-shadow: var(--bs-medium);
     }
 `;
@@ -78,7 +73,7 @@ export const ScrollerBox = styled.div`
 export const Scroller = styled.div`
     height: 1.2rem;
     width: 1.2rem;
-    background-color: var(--red-light);
+    background-color: rgb(var(--red-light));
     margin: 1rem 0;
     clip-path: polygon(50% 70%, 0 0, 100% 0);
 `;

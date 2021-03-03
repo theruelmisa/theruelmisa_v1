@@ -4,14 +4,14 @@ const GlobalStyles = createGlobalStyle`
 
     :root {
         // Colors
-        --red-main: #BA181B;
-        --red-light: #E5383B;
-        --red-dark: #A4161A;
-        --grey-light: #F5F3F4;
-        --grey-dark: #D3D3D3;
-        --white: #fafafa;
-        --black: #161A1D;
-        // --black-dark: #0B090A;
+        --red-main: 186, 24, 27;
+        --red-light: 229, 56, 59;
+        --red-dark: 164, 22, 26;
+        --grey-light: 245, 243, 244;
+        --grey-dark: 211, 211, 211;
+        --white: 250, 250, 250;
+        --black: 22, 26, 29;
+        // --black-dark: 11, 9, 10;
 
         --bs-light: .5px 2px 5px rgba(0, 0, 0, .2);
         --bs-medium: 1px 3px 8px rgba(0, 0, 0, .6);
@@ -34,8 +34,8 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         line-height: 1.5;
-        background-color: var(--white);
-        color: var(--black);
+        background-color: rgb(var(--white));
+        color: rgb(var(--black));
     }
 
     a { 
@@ -50,8 +50,8 @@ const GlobalStyles = createGlobalStyle`
 
 export const MainContainer = styled.div`
     display: grid;
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
-    grid-template-rows: 100vh repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    grid-template-rows: 8rem 100vh repeat(2, min-content);
 `;
 
 // TYPOGRAPHY

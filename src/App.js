@@ -6,13 +6,13 @@ const App = () => {
     return ( 
         <>
             <GlobalStyles />
-            <Header />
             <MainContainer>
+                <Header />
                 <Hero />
                 <Work />
                 <About />
-                <Footer />
             </MainContainer>
+            <Footer />
         </>
     );
 }
