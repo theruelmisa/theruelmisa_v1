@@ -34,3 +34,36 @@ export const LogoImg = styled.img`
     height: 3.5rem;
 `;
 
+export const MobileIcon = styled.div`
+    display: none;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    & > span {
+        display: inline-block;
+        width: 2rem;
+        height: 2px;
+        background-color: rgb(var(--black));
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            left: auto;
+            right: 0;
+            display: inline-block;
+            width: 3rem;
+            height: 2px;
+            background-color: rgb(var(--black));
+        }
+
+        &::before { top: -0.8rem }
+        &::after { top: 0.8rem }
+
+        // TODO FINISH STYLING LATER
+    }
+`;
