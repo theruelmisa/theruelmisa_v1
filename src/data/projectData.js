@@ -6,7 +6,9 @@ export const projects = [
         status: 'Minimum Viable Product',
         stack: [ReactJS, Firebase],
         github: 'https://github.com/theruelmisa/stories',
-        website: 'https://seasonedstories.netlify.app/'
+        website: 'https://seasonedstories.netlify.app/',
+        image: '',
+        start: 'left',
     },
     {
         id: 2,
@@ -15,7 +17,9 @@ export const projects = [
         status: 'Minimum Viable Product',
         stack: [ReactJS, Commerce.js, Stripe, MaterialUI],
         github: 'https://github.com/theruelmisa/swimcommerce',
-        website: 'https://swimcommerce.netlify.app/'
+        website: 'https://swimcommerce.netlify.app/',
+        image: '',
+        start: 'right',
     },
     {
         id: 3,
@@ -24,7 +28,9 @@ export const projects = [
         status: 'Finished',
         stack: [HTML, Sass],
         github: 'https://github.com/ruemisa/home-salon',
-        website: 'https://ruemisa.github.io/home-salon/'
+        website: 'https://ruemisa.github.io/home-salon/',
+        image: '',
+        start: 'left',
     },
     {
         id: 4,
@@ -33,6 +39,10 @@ export const projects = [
         status: 'Finished',
         stack: [HTML, CSS, jQuery],
         github: 'https://github.com/ruemisa/building-scout',
-        website: 'https://ruemisa.github.io/building-scout/'
+        website: 'https://ruemisa.github.io/building-scout/',
+        image: '',
+        start: 'right',
     }
 ];
+
+// TODO: Add images
