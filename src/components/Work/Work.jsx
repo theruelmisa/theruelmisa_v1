@@ -1,27 +1,23 @@
 import React from 'react'
-import { WorkContainer } from './Work.elements';
+import { WorkContainer, WorkItemGrid } from './Work.elements';
+import { MainHeading } from '../../globalStyles';
+import WorkItem from './WorkItem/WorkItem';
+import { projects } from '../../data/projectData';
+
 
 const Work = () => {
     return (
         <WorkContainer>
-            <h1>Projects I've built</h1>
+            <MainHeading>Projects I've built</MainHeading>
 
-            <div>
-                <div>
-                    <div>
-                        <h3>Stories</h3>
-                        <span>Minimum Viable Product</span>
-                    </div>
-                    <p>Description</p>
-                    <ul><li>Tech stack</li></ul>
-                    <ul><li>Links</li></ul>
-                </div>
+            <WorkItemGrid>
+                {
+                    projects.map( project => (
+                        <WorkItem key={project.id} project={project} />
+                    ))
+                }
 
-                <div>
-                    <p>image here</p>
-                </div>
-
-            </div>
+            </WorkItemGrid>
 
         </WorkContainer>
     )

@@ -9,8 +9,7 @@ export const HeroContainer = styled.div`
     align-items: center;
     justify-items: start;
 
-    /* background-color: var(--red-main);
-    color: var(--grey-light); */
+    /* background-color: rgb(var(--red-main)); */
 `;
 
 export const IntroBox = styled.div`
@@ -25,20 +24,19 @@ export const IntroBox = styled.div`
 `;
 
 export const IntroTitle = styled(MainHeading)`
-    font-size: 4rem;
+    font-size: clamp(3.5rem, 4vw, 4.5rem);
     letter-spacing: 0.4rem;
-
 `;
 
 export const IntroSubtitle = styled(SubHeading)`
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 4vw, 2.6rem);
     letter-spacing: 0.1rem;
 `;
 
 export const IntroPara = styled.p`
     padding: 1rem .5rem;
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     letter-spacing: .1rem;
     line-height: 2rem;
 `;
@@ -48,9 +46,15 @@ export const IntroButton = styled.button`
     font-size: 1.6rem;
     padding: 1rem 2.5rem;
     margin-bottom: 3rem;
-    border: 1.5px solid rgb(var(--black));
+    border: 1.5px solid rgb(var(--red-light));
     border-radius: 0.7rem;
     background-color: inherit;
+    color: rgb(var(--red-light));
+    // Just testing
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 
     transition: all .3s ease;
 

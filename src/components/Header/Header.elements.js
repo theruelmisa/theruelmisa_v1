@@ -15,7 +15,8 @@ export const HeaderContainer = styled.header`
     right: 0;
     z-index: 2;
 
-    background-color: ${({ showHeader }) => ( showHeader ? 'rgba(var(--grey-light),.8)' : 'inherit')};
+    background-color: ${({ showHeader }) => ( showHeader ? 'rgba(var(--grey-light),1)' : 'inherit')};
+    color: ${({ showHeader }) => ( showHeader ? 'rgba(var(--black),1)' : 'inherit')};
 
     @media screen and (max-width: 1440px) {
         padding: 1rem 2rem;

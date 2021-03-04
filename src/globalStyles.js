@@ -34,8 +34,8 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         line-height: 1.5;
-        background-color: rgb(var(--white));
-        color: rgb(var(--black));
+        background-color: rgb(var(--black));
+        color: rgb(var(--white));
     }
 
     a { 
@@ -62,7 +62,7 @@ export const MainHeading = styled.h1`
     font-size: 3.2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    padding: 1rem .5rem;
+    padding: 1rem 0;
 `;
 
 export const SubHeading = styled.h3`
