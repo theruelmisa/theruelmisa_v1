@@ -63,6 +63,7 @@ export const MainHeading = styled.h1`
     text-transform: uppercase;
     margin-bottom: 1rem;
     padding: 1rem 0;
+    color: ${ props => props.darkText ? 'rgb(var(--black))' : 'inherit'};
 `;
 
 export const SubHeading = styled.h3`

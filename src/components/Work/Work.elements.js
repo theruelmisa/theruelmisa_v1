@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-export const WorkContainer = styled.div`
+export const WorkContainer = styled.section`
     grid-column: full-start / full-end;
     padding: 5rem 12%;
-    margin-bottom: 5rem;
     background-color: rgb(var(--red-light));
 
     & > h1 {

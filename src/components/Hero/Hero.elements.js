@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { MainHeading, SubHeading } from '../../globalStyles';
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
     grid-column: full-start / full-end;
 
     display: grid;

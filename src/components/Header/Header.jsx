@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Navigation from '../Navigation/Navigation';
 import { HeaderContainer, LogoBox, LogoImg } from './Header.elements';
 import { animateScroll as scroll } from 'react-scroll';
-
 import Logo from '../../assets/main-logo-md.svg';
 
 const Header = () => {
@@ -29,13 +28,13 @@ const Header = () => {
     }
 
     const handleScrollToTop = () => {
-
         if (click) {
             setClick(false);
         }
-
         scroll.scrollToTop();
     }
+
+    // IDEA: Try to change color of header when approaching about me
 
     return (
         <HeaderContainer showHeader={showHeader}>
