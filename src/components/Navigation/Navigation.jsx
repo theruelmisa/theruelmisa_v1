@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { Nav, NavMenu, NavItems, NavLinks, MobileIcon } from './Navigation.elements';
 import { IoLogoLinkedin, IoLogoBehance, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
 const Navigation = ({ navType, click }) => {
-
+    // TODO: Finish Mobile Icon Nav 
     return (
         <>
             {
