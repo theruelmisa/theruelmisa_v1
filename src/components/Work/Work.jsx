@@ -7,7 +7,7 @@ import { projects } from '../../data/projectData';
 
 const Work = () => {
     return (
-        <WorkContainer>
+        <WorkContainer name="work">
             <MainHeading>Projects I've built</MainHeading>
 
             <WorkItemGrid>

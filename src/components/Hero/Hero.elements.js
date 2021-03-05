@@ -72,6 +72,35 @@ export const ScrollerBox = styled.div`
     align-items: center;
     margin-left: 1.5%;
     width: 10%;
+
+    & > * {
+        animation: pulse 1.2s infinite;
+
+        @keyframes pulse {
+            0% {
+                opacity: 0;
+            }
+
+            50% { 
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    & > *:nth-child(1) {
+        animation-delay: .3s
+    }
+
+    & > *:nth-child(2) {
+        animation-delay: .6s
+    }
+    & > *:nth-child(3) {
+        animation-delay: .9s
+    }
 `;
 
 export const Scroller = styled.div`

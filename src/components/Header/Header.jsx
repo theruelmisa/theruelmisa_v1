@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navigation from '../Navigation/Navigation';
-import { HeaderContainer, LogoBox, LogoImg, MobileIcon } from './Header.elements';
+import { HeaderContainer, LogoBox, LogoImg } from './Header.elements';
+import { animateScroll as scroll } from 'react-scroll';
 
 import Logo from '../../assets/main-logo-md.svg';
 
@@ -19,8 +20,6 @@ const Header = () => {
 
     const handleClick = () => setClick(!click);
 
-    const handleCloseMenu = () => setClick(false);
-
     const handleShowHeader = () => {
         if (window.scrollY > 100) {
             setShowHeader(true);
@@ -29,15 +28,21 @@ const Header = () => {
         };
     }
 
+    const handleScrollToTop = () => {
+
+        if (click) {
+            setClick(false);
+        }
+
+        scroll.scrollToTop();
+    }
+
     return (
         <HeaderContainer showHeader={showHeader}>
-            <LogoBox onClick={handleCloseMenu}>
+            <LogoBox onClick={handleScrollToTop}>
                 <LogoImg src={Logo} alt="RM logo" />
             </LogoBox>
-            {/* <MobileIcon onClick={handleClick}>
-                <span>&nbsp;</span>
-            </MobileIcon> */}
-            <Navigation navType="header" />
+            <Navigation navType="header" handleClick={handleClick} />
         </HeaderContainer>
     )
 }

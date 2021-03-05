@@ -27,8 +27,11 @@ export const WorkItemGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
+    margin-bottom: 3rem;
 
     @media screen and (max-width: 960px) {
         grid-template-columns: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 `;

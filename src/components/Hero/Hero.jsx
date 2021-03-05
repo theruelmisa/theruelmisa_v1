@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 import { 
     HeroContainer, 
     IntroBox, 
@@ -11,8 +12,9 @@ import {
 } from './Hero.elements';
 
 const Hero = () => {
+
     return (
-        <HeroContainer>
+        <HeroContainer name="home">
             <IntroBox>
                 <IntroTitle>Creating stories through design</IntroTitle>
                 <IntroSubtitle>
@@ -23,7 +25,15 @@ const Hero = () => {
                     Graphic Designer <br />
                     based in Brooklyn, NY
                 </IntroPara>
-                <IntroButton>Say Hello</IntroButton>
+                <Link 
+                    to="about"
+                    spy={true} 
+                    offset={50}
+                    duration={1000}
+                    smooth={true}
+                >
+                    <IntroButton>Say Hello</IntroButton>
+                </Link>
                 <ScrollerBox>
                     <Scroller />
                     <Scroller />

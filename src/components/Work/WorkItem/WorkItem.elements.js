@@ -7,6 +7,7 @@ export const Card = styled.div`
     display: grid;
     grid-template-columns: min-content 1fr;
     box-shadow: var(--bs-light);
+    font-size: 1.2rem;
 
     transition: all .2s ease-in;
 
@@ -21,33 +22,50 @@ export const Card = styled.div`
 
 export const CardText = styled.div`
     background-color: rgb(var(--black));    
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
 `;
 
 export const CardTitle = styled(SubHeading)`
     font-size: 2.4rem;
-
+    padding-left: 0;
+    padding-right: 0;
 `;
 
 
 export const CardDesc = styled.p`
-    border: 1px solid black;
+    margin-bottom: 2rem;
 `;
 
 export const Tech = styled.ul`
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
 `;
 
 export const TechItems = styled.li`
-    border: 1px solid black;
+    &:not(:last-of-type) {
+        margin-right: 1rem;
+    }
 `;
 
 export const LinkBox = styled.ul`
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 2.2rem;
 `;
 
 export const LinkItems = styled.li`
+    transition: all .3s ease-in;   
 
+    &:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+
+    &:hover {
+        color: rgb(var(--red-dark));
+    }
 `;
 
 export const CardImgBox = styled.figure`
