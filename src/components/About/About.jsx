@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutContainer, ContentBox } from './About.elements';
+import { AboutContainer, ContentBox, Contact, ContactTitle } from './About.elements';
 import { MainHeading } from '../../globalStyles';
 
 
@@ -28,13 +28,13 @@ const About = () => {
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <h3>Ready to talk?</h3>
+                <Contact>
+                    <ContactTitle>Ready to talk?</ContactTitle>
                     <ul>
                         <li>email</li>
                         <li>number</li>
                     </ul>
-                </div>
+                </Contact>
             </ContentBox>
         </AboutContainer>
     )
