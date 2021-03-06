@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
         --red-light: 229, 56, 59;
         --red-dark: 164, 22, 26;
         --grey-light: 245, 243, 244;
-        --grey-dark: 211, 211, 211;
+        --grey-dark: 151, 136, 135;
         --white: 250, 250, 250;
         --black: 22, 26, 29;
         // --black-dark: 11, 9, 10;
@@ -57,11 +57,11 @@ export const MainContainer = styled.div`
 // TYPOGRAPHY
 
 export const MainHeading = styled.h1`
-    letter-spacing: .2rem;
+    letter-spacing: .35rem;
     font-weight: 300;
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 1rem 0;
     color: ${ props => props.darkText ? 'rgb(var(--black))' : 'inherit'};
 `;
