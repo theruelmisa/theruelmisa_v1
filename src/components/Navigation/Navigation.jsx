@@ -22,11 +22,12 @@ const Navigation = ({ navType, handleClick, click, showHeader }) => {
                                     offset={-100}
                                     duration={1000}
                                     smooth={true}
+                                    onClick={handleClick}
                                 >    
                                 Home
                                 </Link>
                             </NavItems>
-                            <NavItems click={click}>
+                            <NavItems click={click} >
                                 <Link 
                                     activeClass="active" 
                                     to="work" 
@@ -34,11 +35,12 @@ const Navigation = ({ navType, handleClick, click, showHeader }) => {
                                     offset={50}
                                     duration={1000}
                                     smooth={true}
+                                    onClick={handleClick}
                                 >
                                     Work
                                 </Link>
                             </NavItems>
-                            <NavItems click={click}>
+                            <NavItems click={click} >
                                 <Link 
                                     activeClass="active" 
                                     to="about" 
@@ -46,6 +48,7 @@ const Navigation = ({ navType, handleClick, click, showHeader }) => {
                                     offset={50}
                                     duration={1000}
                                     smooth={true}
+                                    onClick={handleClick}
                                 >
                                     About
                                 </Link>

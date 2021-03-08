@@ -6,7 +6,7 @@ export const projects = [
         stack: ['ReactJS', 'Firebase'],
         github: 'https://github.com/theruelmisa/stories',
         website: 'https://seasonedstories.netlify.app/',
-        image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+        image: '/images/stories_thumb.png',
         start: 'left',
     },
     {
@@ -16,7 +16,7 @@ export const projects = [
         stack: ['ReactJS', 'Commerce.js', 'Stripe', 'MaterialUI'],
         github: 'https://github.com/theruelmisa/swimcommerce',
         website: 'https://swimcommerce.netlify.app/',
-        image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+        image: '/images/swimcommerce_thumb.png',
         start: 'right',
     },
     {
@@ -26,7 +26,7 @@ export const projects = [
         stack: ['HTML', 'Sass'],
         github: 'https://github.com/ruemisa/home-salon',
         website: 'https://ruemisa.github.io/home-salon/',
-        image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+        image: '/images/homesalon_thumb.png',
         start: 'left',
     },
     {
@@ -36,7 +36,7 @@ export const projects = [
         stack: ['HTML', 'CSS', 'jQuery'],
         github: 'https://github.com/ruemisa/building-scout',
         website: 'https://ruemisa.github.io/building-scout/',
-        image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+        image: '/images/building_scout_thumb.png',
         start: 'right',
     }
 ];

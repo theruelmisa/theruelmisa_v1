@@ -13,6 +13,7 @@ import {
 } from './WorkItem.elements';
 import { IoLogoGithub, IoBrowsers } from 'react-icons/io5';
 
+
 const WorkItem = ({ project }) => {
 
     return (

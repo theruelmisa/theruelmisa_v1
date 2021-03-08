@@ -72,6 +72,7 @@ export const NavLinks = styled.a`
 
 export const MobileIcon = styled.div`
     margin-top: 1.5rem;
+    margin-right: 1rem;
     display: none;
     position: relative;
     z-index: 100;
