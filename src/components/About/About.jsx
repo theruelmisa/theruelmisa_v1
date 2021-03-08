@@ -37,15 +37,11 @@ const About = () => {
                     <SkillsBox>
                         <AboutSubheading>Toolset</AboutSubheading>
                         <Skills>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>SQL</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Sass</li>
-                            <li>Illustrator</li>
-                            <li>Photoshop</li>
-                            <li>XD</li>
+                            {
+                                skills.map((skill, index) => (
+                                    <li key={index}>{skill}</li>
+                                ))
+                            }
                         </Skills>
                     </SkillsBox>
                 </AboutContent>

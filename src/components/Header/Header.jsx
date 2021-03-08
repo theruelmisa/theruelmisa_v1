@@ -41,7 +41,7 @@ const Header = () => {
             <LogoBox onClick={handleScrollToTop}>
                 <LogoImg src={Logo} alt="RM logo" />
             </LogoBox>
-            <Navigation navType="header" handleClick={handleClick} />
+            <Navigation navType="header" handleClick={handleClick} click={click} showHeader={showHeader} />
         </HeaderContainer>
     )
 }

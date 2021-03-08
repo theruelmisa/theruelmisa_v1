@@ -64,6 +64,10 @@ export const IntroButton = styled.button`
         border-color: rgb(var(--red-main));
         box-shadow: var(--bs-medium);
     }
+
+    &:active {
+        outline: none;
+    }
 `;
 
 export const ScrollerBox = styled.div`

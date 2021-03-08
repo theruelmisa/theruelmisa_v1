@@ -1,12 +1,17 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation';
+import { FooterContainer, Copyright } from './Footer.elements';
 
 const Footer = () => {
+
     return (
-        <footer style={{border: '1px solid red'}}>
-            FOOTER
-            <Navigation />
-        </footer>
+        <FooterContainer>
+            <Navigation navType="social"/>
+
+            <Copyright>
+                <p>Copyright &copy; {new Date().getFullYear()} | Ruel Misa. All Rights Reserved.</p>
+            </Copyright>
+        </FooterContainer>
     )
 }
 

@@ -60,22 +60,25 @@ export const AboutSubheading = styled(SubHeading)`
 `;
 
 export const SkillsBox = styled.div`
-    border: 1px solid red;
     margin-bottom: 1rem;
 `;
 
 export const Skills = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+
     font-size: clamp(1.2rem, 2vw, 1.3rem);
 
     & > li {
 
-
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
+        /* border: 1px solid rgb(var(--red-light)); */
+        background-color: rgb(var(--red-main));
+        color: rgb(var(--grey-light));
+        border-radius: .5rem;
+        padding: .5rem 1rem;
+        box-shadow: var(--bs-light);
     }
 `;
 
