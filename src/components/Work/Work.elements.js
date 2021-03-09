@@ -14,7 +14,9 @@ export const WorkContainer = styled.section`
     }
 
     @media screen and (max-width: 960px) {
-        padding: 2rem;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
 
         & > h1 {
             text-align: center;
