@@ -10,6 +10,8 @@ export const aboutDetails = {
         'HTML',
         'CSS',
         'Sass',
+        'PHP',
+        'WordPress',
         'Illustrator',
         'Photoshop',
         'XD'
