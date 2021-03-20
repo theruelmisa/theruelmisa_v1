@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        
     }
 
     html {
@@ -45,6 +46,17 @@ const GlobalStyles = createGlobalStyle`
 
     li {
         list-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: .5rem;
+        background-color: rgb(var(--black));
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5rem;
+        background-color: rgb(var(--red-main));
+        box-shadow: var(--bs-raised);
     }
 `;
 
