@@ -4,16 +4,22 @@ export const aboutDetails = {
     backstory3: "On my spare time, I draw, catch up on latest trends, read, play video games, or create a mess in the kitchen.",
     skills: [
         'React',
+        'Redux',
         'JavaScript',
         'SQL',
         'Firebase',
+        'Azure',
         'HTML',
         'CSS',
         'Sass',
+        'GSAP',
+        'C#',
+        '.NET Core',
         'PHP',
         'WordPress',
         'Illustrator',
         'Photoshop',
-        'XD'
+        'XD',
+        'After Effects',
     ]
 };
