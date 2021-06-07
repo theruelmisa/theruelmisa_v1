@@ -1,7 +1,7 @@
 # The Ruel Misa 
 
-Portfolio 
+My portfolio website. 
 
->> theruelmisa.com
+https://ruelalfonsomisa.com/
 
 by: Ruel Misa
