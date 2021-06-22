@@ -1,11 +1,11 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-scroll';
-import { gsap } from 'gsap';
-import { 
-    HeroContainer, 
-    IntroBox, 
-    IntroTitle, 
-    IntroSubtitle, 
+// import { gsap } from 'gsap';
+import {
+    HeroContainer,
+    IntroBox,
+    IntroTitle,
+    IntroSubtitle,
     IntroPara,
     IntroButton,
     ScrollerBox,
@@ -37,9 +37,9 @@ const Hero = () => {
                     Graphic Designer <br />
                     based in Brooklyn, NY
                 </IntroPara>
-                <Link 
+                <Link
                     to="about"
-                    spy={true} 
+                    spy={true}
                     offset={50}
                     duration={1000}
                     smooth={true}

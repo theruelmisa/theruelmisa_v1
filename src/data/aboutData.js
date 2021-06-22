@@ -3,17 +3,14 @@ export const aboutDetails = {
     backstory2: "I possess a passion for designing and creating intuitive experiences with great attention to detail. Very independent but doesn't shy away from collaboration. Keen in solving problems through web design and development.",
     backstory3: "On my spare time, I draw, catch up on latest trends, read, play video games, or create a mess in the kitchen.",
     skills: [
-        'React',
+        'ReactJS',
         'Redux',
         'JavaScript',
-        'SQL',
-        'Firebase',
+        'NextJS',
         'HTML',
         'CSS',
         'Sass',
-        'Illustrator',
-        'Photoshop',
-        'XD',
-        'After Effects',
+        'SQL',
+        'Adobe CC'
     ]
 };
