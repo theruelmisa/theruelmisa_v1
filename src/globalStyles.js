@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         line-height: 1.5;
-        background-color: rgb(var(--black));
+        background-color: rgba(var(--black));
         color: rgb(var(--white));
     }
 
@@ -61,34 +61,32 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export const MainContainer = styled.div`
-    display: grid;
-    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
-    grid-template-rows: 8rem 100vh repeat(2, min-content);
+	display: grid;
+	grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(
+			8,
+			[col-start] minmax(min-content, 18rem) [col-end]
+		) [center-end] minmax(3rem, 1fr) [full-end];
+	grid-template-rows: 8rem 100vh repeat(2, min-content);
 `;
 
 // TYPOGRAPHY
 
 export const MainHeading = styled.h1`
-    letter-spacing: .35rem;
-    font-weight: 300;
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    padding: 1rem 0;
-    color: ${ props => props.darkText ? 'rgb(var(--black))' : 'inherit'};
+	letter-spacing: 0.35rem;
+	font-weight: 300;
+	font-size: clamp(2rem, 4vw, 3.2rem);
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+	padding: 1rem 0;
+	color: ${(props) => (props.darkText ? "rgb(var(--black))" : "inherit")};
 `;
 
 export const SubHeading = styled.h3`
-    letter-spacing: .3rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    padding: 1rem .5rem;
+	letter-spacing: 0.3rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	padding: 1rem 0.5rem;
 `;
 
-
 export default GlobalStyles;
-
-
-
-
