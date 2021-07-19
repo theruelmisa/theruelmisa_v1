@@ -19,8 +19,9 @@ export const WorkContainer = styled.section`
 		margin-bottom: 5rem;
 		color: rgb(var(--red-dark));
 		font-weight: 700;
-		opacity: 0;
-		animation: ${animation};
+		opacity: 1;
+		/* opacity: 0; */
+		/* animation: ${animation}; */
 	}
 
 	@media screen and (max-width: 1440px) {
