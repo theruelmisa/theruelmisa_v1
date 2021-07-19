@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -58,14 +58,21 @@ const GlobalStyles = createGlobalStyle`
         background-color: rgb(var(--red-main));
         box-shadow: var(--bs-raised);
     }
+
+    ::selection {
+        background: rgb(var(--red-main));
+        color: rgb(var(--grey-light));
+    }
 `;
 
 export const MainContainer = styled.div`
 	display: grid;
-	grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(
+	grid-template-columns:
+		[full-start] minmax(3rem, 1fr) [center-start] repeat(
 			8,
 			[col-start] minmax(min-content, 18rem) [col-end]
-		) [center-end] minmax(3rem, 1fr) [full-end];
+		)
+		[center-end] minmax(3rem, 1fr) [full-end];
 	grid-template-rows: 8rem 100vh repeat(2, min-content);
 `;
 
@@ -87,6 +94,22 @@ export const SubHeading = styled.h3`
 	font-weight: 400;
 	margin-bottom: 1rem;
 	padding: 1rem 0.5rem;
+`;
+
+export const zoomInFromLeft = keyframes`
+    0% { transform: translateX(-45%) scale(0.1);}
+    100% { transform: translateX(0) scale(1); opacity: 1}
+`;
+
+export const enterFromBelow = keyframes`
+    0% { transform: translateY(80%);}
+    100% { opacity: 1; transform: translateY(0)};
+`;
+
+export const changeOpacity = keyframes`
+    100% {
+        opacity: 1;
+    }
 `;
 
 export default GlobalStyles;

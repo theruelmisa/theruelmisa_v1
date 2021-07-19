@@ -32,7 +32,7 @@ const Navigation = ({ navType, handleClick, click, showHeader }) => {
                                     activeClass="active" 
                                     to="work" 
                                     spy={true} 
-                                    offset={50}
+                                    offset={-80}
                                     duration={1000}
                                     smooth={true}
                                     onClick={handleClick}
@@ -45,7 +45,7 @@ const Navigation = ({ navType, handleClick, click, showHeader }) => {
                                     activeClass="active" 
                                     to="about" 
                                     spy={true} 
-                                    offset={50}
+                                    offset={100}
                                     duration={1000}
                                     smooth={true}
                                     onClick={handleClick}
