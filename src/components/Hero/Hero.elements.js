@@ -1,26 +1,39 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import {
 	MainHeading,
 	SubHeading,
-	zoomInFromLeft,
+	zoomInFromCenter,
 	enterFromBelow,
 	changeOpacity,
 } from "../../globalStyles";
+import bgImg from '../../assets/main-logo-md.svg';
 
 export const HeroContainer = styled.section`
 	grid-column: full-start / full-end;
-
-	display: grid;
-	grid-template-columns:
+	align-self: center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	/* grid-template-columns:
 		[full-start] minmax(3rem, 1fr) [center-start] repeat(
 			8,
 			[col-start] minmax(min-content, 18rem) [col-end]
 		)
-		[center-end] minmax(3rem, 1fr) [full-end];
-	align-items: center;
-	justify-items: start;
+		[center-end] minmax(3rem, 1fr) [full-end]; */
+	/* align-items: center;
+	justify-items: start; */
 
-	/* background-color: rgb(var(--red-main)); */
+	background: inherit;
+	background-image: url(${bgImg}); 
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-attachment: fixed;
+
+
 `;
 
 export const IntroBox = styled.div`
@@ -35,11 +48,11 @@ export const IntroBox = styled.div`
 `;
 
 export const IntroTitle = styled(MainHeading)`
-	font-size: clamp(3.5rem, 4vw, 6.5rem);
+	font-size: clamp(3.5rem, 4vw, 5.5rem);
 	letter-spacing: 0.7rem;
 	font-weight: 700;
 	opacity: 0;
-	animation: ${zoomInFromLeft} 3s ease-in-out 1 forwards;
+	animation: ${zoomInFromCenter} 3s ease-in-out 1 forwards;
 `;
 
 export const IntroSubtitle = styled(SubHeading)`
@@ -64,10 +77,11 @@ export const IntroButton = styled.button`
 	font-size: 1.6rem;
 	padding: 1rem 2.5rem;
 	margin-bottom: 3rem;
-	border: 1.5px solid rgb(var(--red-light));
+	border: 2px solid rgb(var(--grey-light));
 	border-radius: 0.7rem;
 	background-color: inherit;
-	color: rgb(var(--red-light));
+	color: rgb(var(--grey-light));
+	box-shadow: 3px 3px 50px rgba(var(--grey-light), .2);
 	opacity: 0;
 	animation: ${enterFromBelow} 1.5s ease-in-out 3.5s 1 forwards;
 	// Just testing
@@ -94,7 +108,7 @@ export const ScrollerBox = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 1.5%;
+	margin: 0 auto;
 	width: 5%;
 	opacity: 0;
 	animation: ${changeOpacity} 1.5s ease-in-out 4.5s 1 forwards;
@@ -129,9 +143,9 @@ export const ScrollerBox = styled.div`
 `;
 
 export const Scroller = styled.div`
-	height: 1.2rem;
-	width: 1.2rem;
-	background-color: rgb(var(--red-light));
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: rgb(var(--grey-light));
 	margin: 1rem 0;
 	clip-path: polygon(50% 70%, 0 0, 100% 0);
 `;

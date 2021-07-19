@@ -6,6 +6,10 @@ export const AboutContainer = styled.section`
     background-color: rgb(var(--grey-light));
     padding: 5rem 12%;
 
+    & > h1 {
+        font-weight: 700;
+    }
+
     /* @media screen and (max-width: 1440px) {
     } */
 

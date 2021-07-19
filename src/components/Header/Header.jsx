@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Navigation from '../Navigation/Navigation';
+// import Navigation from '../Navigation/Navigation';
 import { HeaderContainer, LogoBox, LogoImg } from './Header.elements';
 import { animateScroll as scroll } from 'react-scroll';
 import Logo from '../../assets/main-logo-md.svg';
@@ -17,7 +17,7 @@ const Header = () => {
         };
     }, []);
 
-    const handleClick = () => setClick(!click);
+    // const handleClick = () => setClick(!click);
 
     const handleShowHeader = () => {
         if (window.scrollY > 100) {
@@ -38,10 +38,10 @@ const Header = () => {
 
     return (
         <HeaderContainer showHeader={showHeader}>
-            <LogoBox onClick={handleScrollToTop}>
+            { showHeader && <LogoBox onClick={handleScrollToTop}>
                 <LogoImg src={Logo} alt="RM logo" />
-            </LogoBox>
-            <Navigation navType="header" handleClick={handleClick} click={click} showHeader={showHeader} />
+            </LogoBox>}
+            {/* <Navigation navType="header" handleClick={handleClick} click={click} showHeader={showHeader} /> */}
         </HeaderContainer>
     )
 }

@@ -3,17 +3,19 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
 	grid-column: full-start / full-end;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
 	height: 8rem;
+	/* justify-content: space-between; */
+	justify: center;
 	padding: 1rem 10rem;
 	transition: all 0.5s ease-in;
-
 	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 2;
+
 
 	background-color: ${({ showHeader }) =>
 		showHeader ? "rgba(var(--grey-light),1)" : "inherit"};

@@ -1,6 +1,6 @@
 import React from "react";
 import GlobalStyles, { MainContainer } from "./globalStyles";
-import { Header, Hero, Work, About, Footer } from "./components";
+import { Header, Hero, Process, Work, About, Footer } from "./components";
 
 const App = () => {
 	return (
@@ -9,6 +9,7 @@ const App = () => {
 			<MainContainer>
 				<Header />
 				<Hero />
+				<Process />
 				<Work />
 				<About />
 			</MainContainer>

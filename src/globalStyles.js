@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         line-height: 1.5;
-        background-color: rgba(var(--black));
+        background-color: rgba(var(--black), 0.9);
         color: rgb(var(--white));
     }
 
@@ -73,7 +73,7 @@ export const MainContainer = styled.div`
 			[col-start] minmax(min-content, 18rem) [col-end]
 		)
 		[center-end] minmax(3rem, 1fr) [full-end];
-	grid-template-rows: 8rem 100vh repeat(2, min-content);
+	grid-template-rows: 8rem 100vh repeat(3, min-content);
 `;
 
 // TYPOGRAPHY
@@ -96,9 +96,9 @@ export const SubHeading = styled.h3`
 	padding: 1rem 0.5rem;
 `;
 
-export const zoomInFromLeft = keyframes`
-    0% { transform: translateX(-45%) scale(0.1);}
-    100% { transform: translateX(0) scale(1); opacity: 1}
+export const zoomInFromCenter = keyframes`
+    0% {  transform: scale(0);}
+    100% { transform: scale(1); opacity: 1}
 `;
 
 export const enterFromBelow = keyframes`

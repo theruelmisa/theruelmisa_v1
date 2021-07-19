@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-scroll';
 // import { gsap } from 'gsap';
 import {
@@ -13,28 +13,16 @@ import {
 } from './Hero.elements';
 
 const Hero = () => {
-    const introTitleRef = useRef(null);
-
-    // useEffect(() => {
-    //     gsap.from(introTitleRef.current, {
-    //         duration: 1,
-    //         autoAlpha: 0,
-    //         ease: 'none',
-    //         delay: .5
-    //     })
-
-    // }, [])
 
     return (
         <HeroContainer name="home">
             <IntroBox>
-                <IntroTitle ref={introTitleRef} >Creating stories through design</IntroTitle>
+                <IntroTitle >Creating exceptional digital experiences</IntroTitle>
                 <IntroSubtitle>
                     Hello! My name is Ruel Misa.
                 </IntroSubtitle>
                 <IntroPara>
-                    Front End Developer <br />
-                    Graphic Designer <br />
+                    Front End Developer & Designer<br />
                     based in Brooklyn, NY
                 </IntroPara>
                 <Link
