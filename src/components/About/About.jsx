@@ -35,7 +35,7 @@ const About = () => {
                         <p>{backstory3}</p>
                     </StoryBox>
                     <SkillsBox>
-                        <AboutSubheading>Toolset</AboutSubheading>
+                        <AboutSubheading>Skills & Tools</AboutSubheading>
                         <Skills>
                             {
                                 skills.map((skill, index) => (

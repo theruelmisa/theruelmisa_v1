@@ -2,11 +2,10 @@ import styled from "styled-components";
 import {
 	MainHeading,
 	SubHeading,
-	zoomInFromCenter,
 	enterFromBelow,
 	changeOpacity,
 } from "../../globalStyles";
-import bgImg from '../../assets/main-logo-md.svg';
+import bgImg from "../../assets/main-logo-md.svg";
 
 export const HeroContainer = styled.section`
 	grid-column: full-start / full-end;
@@ -27,13 +26,11 @@ export const HeroContainer = styled.section`
 	justify-items: start; */
 
 	background: inherit;
-	background-image: url(${bgImg}); 
+	background-image: url(${bgImg});
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 	background-attachment: fixed;
-
-
 `;
 
 export const IntroBox = styled.div`
@@ -52,7 +49,7 @@ export const IntroTitle = styled(MainHeading)`
 	letter-spacing: 0.7rem;
 	font-weight: 700;
 	opacity: 0;
-	animation: ${zoomInFromCenter} 3s ease-in-out 1 forwards;
+	animation: ${enterFromBelow} 3s ease-in-out 1 forwards;
 `;
 
 export const IntroSubtitle = styled(SubHeading)`
@@ -81,7 +78,7 @@ export const IntroButton = styled.button`
 	border-radius: 0.7rem;
 	background-color: inherit;
 	color: rgb(var(--grey-light));
-	box-shadow: 3px 3px 50px rgba(var(--grey-light), .2);
+	box-shadow: 3px 3px 50px rgba(var(--grey-light), 0.2);
 	opacity: 0;
 	animation: ${enterFromBelow} 1.5s ease-in-out 3.5s 1 forwards;
 	// Just testing
