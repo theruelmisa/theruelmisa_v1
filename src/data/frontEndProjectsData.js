@@ -6,7 +6,7 @@ export const projects = [
 		stack: ["HTML", "Sass", "Foundation Email Framework"],
 		github: "https://github.com/theruelmisa/workspace_emails",
 		website: "https://workspace-promotional.netlify.app/",
-		image: "/images/promo_thumb.png",
+		image: "https://i.imgur.com/R0DKzpD.png",
 		start: "left",
 	},
 	{
@@ -16,7 +16,7 @@ export const projects = [
 		stack: ["HTML", "Sass", "Foundation Email Framework"],
 		github: "https://github.com/theruelmisa/workspace_emails",
 		website: "https://workspace-transactional.netlify.app/",
-		image: "/images/transaction_thumb.png",
+		image: "https://i.imgur.com/NSI1ckA.png",
 		start: "right",
 	},
 	{
@@ -26,7 +26,7 @@ export const projects = [
 		stack: ["HTML", "Sass", "Foundation Email Framework"],
 		github: "https://github.com/theruelmisa/workspace_emails",
 		website: "https://workspace-newsletter.netlify.app/",
-		image: "/images/newsletter_thumb.png",
+		image: "https://i.imgur.com/tfYn7JD.png",
 		start: "left",
 	},
 	{
@@ -36,7 +36,7 @@ export const projects = [
 		stack: ["HTML", "CSS"],
 		github: "https://github.com/theruelmisa/medusa-landing-page",
 		website: "https://medusa-systems.netlify.app/ ",
-		image: "/images/medusa_thumb.png",
+		image: "https://i.imgur.com/wZRC25o.png",
 		start: "right",
 	},
 	{
@@ -46,7 +46,7 @@ export const projects = [
 		stack: ["HTML", "Sass"],
 		github: "https://github.com/theruelmisa/beastFit",
 		website: "https://beastfit.netlify.app/",
-		image: "/images/beastFit_thumb.png",
+		image: "https://i.imgur.com/Ik8jMKL.png",
 		start: "left",
 	},
 
@@ -57,7 +57,7 @@ export const projects = [
 		stack: ["HTML", "CSS", "jQuery"],
 		github: "https://github.com/theruelmisa/building-scout",
 		website: "https://buildingscout.netlify.app/",
-		image: "/images/building_scout_thumb.png",
+		image: "https://i.imgur.com/d7sxfhs.png",
 		start: "right",
 	},
 ];
@@ -69,6 +69,6 @@ export const projects = [
 // 	stack: ["HTML", "Sass"],
 // 	github: "https://github.com/theruelmisa/home-salon",
 // 	website: "https://salonathome.netlify.app/",
-// 	image: "/images/homesalon_thumb.png",
+// 	image: "https://i.imgur.com/3H75Tdk.png",
 // 	start: "right",
 // },
