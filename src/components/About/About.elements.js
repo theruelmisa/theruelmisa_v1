@@ -117,6 +117,24 @@ export const ContactDetails = styled.ul`
 			letter-spacing: 0.15rem;
 		}
 
+		& > a {
+			display: inline-block;
+			border: 2px solid rgb(var(--red-main));
+			border-radius: 0.5rem;
+			color: rgb(var(--red-main));
+			padding: 1rem;
+			box-shadow: var(--bs-light);
+			font-size: 1.4rem;
+			transition: all 0.3s ease;
+
+			&:hover {
+				background-color: rgb(var(--red-main));
+				color: rgb(var(--grey-light));
+				border-color: rgb(var(--red-main));
+				box-shadow: var(--bs-medium);
+			}
+		}
+
 		&:not(:last-of-type) {
 			margin-bottom: 2rem;
 		}

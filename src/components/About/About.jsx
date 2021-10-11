@@ -13,7 +13,7 @@ import {
     ContactDetails, 
 } from './About.elements';
 import { MainHeading } from '../../globalStyles';
-import { IoCall, IoMail } from 'react-icons/io5';
+import { IoCall, IoMail} from 'react-icons/io5';
 
 
 
@@ -53,6 +53,9 @@ const About = () => {
                         </li>
                         <li>
                             <IoCall /> <span>917.724.6759</span>
+                        </li>
+                        <li>
+                            <a href="RuelMisaResume2021.pdf" download>Download Resume</a>
                         </li>
                     </ContactDetails>
                 </Contact>
